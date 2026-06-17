@@ -425,7 +425,7 @@ input, select { font-family: inherit; }
 }
 
 .p-box { border-color: var(--info); margin-top: 4px; }
-.child-btn-wrap { display: flex; justify-content: center; padding: 12px 0; position: relative; }
+.child-btn-wrap { display: flex; justify-content: center; padding: 12px 0; position: relative; border:2px yellow solid; border-radius: var(--radius);}
 
 #childBtn {
   background: var(--accent);

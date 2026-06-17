@@ -364,25 +364,7 @@ const pipeFrag = document.createDocumentFragment();
 PIPELINE_STEPS.forEach(s => pipeFrag.appendChild(buildPipeStep(s)));
 pipeFlow.appendChild(pipeFrag);
 
-const GLOSSARY = [
-  { term: 'Tokenization', def: 'The browser\'s HTML parser reads raw bytes and breaks them into discrete tokens — opening tags, closing tags, attribute names, attribute values, and text content. Each token represents one atomic piece of HTML.' },
-  { term: 'Parsing', def: 'Tokens are consumed one by one and assembled into Node objects according to the HTML5 spec. The parser builds the tree incrementally; invalid HTML is repaired using defined error-recovery rules.' },
-  { term: 'DOM Tree', def: 'A tree of Node objects representing the document\'s structure: Document → html → head/body → … Each node exposes properties and methods you manipulate via JavaScript (e.g., element.textContent, appendChild).' },
-  { term: 'CSSOM Tree', def: 'The CSS Object Model is built in parallel with the DOM. Each selector maps to a rule set; the cascade resolves conflicting declarations. JavaScript can read and mutate styles via element.style or getComputedStyle().' },
-  { term: 'Render Tree', def: 'DOM and CSSOM are combined. Invisible nodes (display:none, <head>, <script>) are excluded. Each visible node gets its computed style. Only nodes that actually appear on screen participate.' },
-  { term: 'Event Bubbling', def: 'After a target element fires an event, it propagates upward through each ancestor in order (child → parent → grandparent → …). Most DOM events bubble by default, enabling event delegation.' },
-  { term: 'Event Capturing', def: 'Before the target receives the event, it travels downward from the root (grandparent → parent → child). Capture-phase handlers fire first. Pass { capture: true } or true as the third arg to addEventListener.' },
-  { term: 'Event Delegation', def: 'Instead of attaching one listener per child, attach a single listener to a parent. Use e.target (or e.target.closest()) to identify which child was interacted with. Reduces memory use and works for dynamically added elements.' },
-];
 
-const glossFrag = document.createDocumentFragment();
-GLOSSARY.forEach(g => {
-  const card = document.createElement('div');
-  card.className = 'gloss-card';
-  card.innerHTML = `<h4>${g.term}</h4><p>${g.def}</p>`;
-  glossFrag.appendChild(card);
-});
-document.getElementById('glossaryGrid').appendChild(glossFrag);
 
 function saveToStorage() {
   try {
