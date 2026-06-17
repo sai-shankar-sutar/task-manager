@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="light">
+    <div class="container">
+      <header class="header">
+        <h1>Task Manager</h1>
+
+        <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+      </header>
+
+      <section class="task-form-section">
+        <form id="taskForm">
+          <div class="input-group">
+            <label>Task Title</label>
+            <input
+              type="text"
+              id="taskTitle"
+              placeholder="Enter task title..."
+            />
+          </div>
+
+          <div class="input-group">
+            <label>Category</label>
+            <select id="taskCategory">
+              <option value="Work">Work</option>
+              <option value="Study">Study</option>
+              <option value="Personal">Personal</option>
+              <option value="Health">Health</option>
+            </select>
+          </div>
+
+          <button type="submit" class="add-btn">+ Add Task</button>
+        </form>
+      </section>
+
+      <section class="tasks-section">
+        <div class="section-title">
+          <h2>Your Tasks</h2>
+        </div>
+
+        <div id="taskContainer" class="task-container">
+    
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
