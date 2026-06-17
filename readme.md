@@ -6,7 +6,7 @@ A feature-rich, high-performance task management web application built completel
 
 ## 🚀 Live Demo
 
-* **Live Deployment:** [[Task Flow](https://sai-shankar-sutar.github.io/task-manager/)] *
+* **Live Deployment:** [[Task Flow](https://task-manager-blush-omega.vercel.app/)] *
 
 ---
 
