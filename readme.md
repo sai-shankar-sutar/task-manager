@@ -6,7 +6,7 @@ A feature-rich, high-performance task management web application built completel
 
 ## 🚀 Live Demo
 
-* **Live Deployment:** [Deploy Link Here] *
+* **Live Deployment:** [[Task Flow](https://sai-shankar-sutar.github.io/task-manager/)] *
 
 ---
 
@@ -127,7 +127,7 @@ The DOM tree and CSSOM tree merge directly into a final operational tree structu
 
 1. Clone the repository down to your local machine environment:
 ```bash
-git clone https://github.com/yourusername/taskflow.git
+git clone https://github.com/sai-shankar-sutar/task-manager
 
 ```
 
