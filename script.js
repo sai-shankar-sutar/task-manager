@@ -58,10 +58,7 @@ function addTask() {
   const titleProp = titleInput.value.trim();
   const titleAttr = titleInput.getAttribute('value') ?? '(none)';
 
-  attrPropNote.textContent =
-    `input.getAttribute('value')  → "${titleAttr}"\n` +
-    `input.value                  → "${titleProp}"`;
-  attrPropNote.classList.add('visible');
+
 
   if (!titleProp) {
     titleInput.focus();
